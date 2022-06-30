@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#title {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+  color: brown;
+  background-color: aqua;
+}
+main {
+  width: 100%;
+}
+.goods-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.good {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 70px;
+  align-items: center;
+  margin: 7px;
+}
+.good-text {
+  width: 100%;
+}
+#text-box {
+  padding-left: 30px;
+  width: 100%;
+  font-size: 30px;
+}
+.good-name {
+  flex-basis: 90%;
+  font-size: 30px;
+  border-right: 2px solid black;
+}
+
+.delete-good {
+  margin: 0;
+  flex-basis: 10%;
+  font-size: 30px;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.add-good {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: aqua;
+  font-size: 80px;
+  cursor: pointer;
+}
