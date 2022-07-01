@@ -4,14 +4,23 @@ body {
   align-items: center;
   margin: 0;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 #title {
   width: 100%;
   padding: 10px;
   text-align: center;
-  font-size: 32px;
-  color: brown;
-  background-color: aqua;
+  font-size: 40px;
+  color: whitesmoke;
+  background: rgb(98, 89, 249);
+  background: linear-gradient(
+    50deg,
+    rgba(98, 89, 249, 1) 0%,
+    rgba(93, 241, 135, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 main {
   width: 100%;
@@ -20,8 +29,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-top: 20px;
+  height: 90vh;
+  border-top: 20px;
+  overflow-y: auto;
+  background: rgb(134, 130, 200);
+  background: linear-gradient(
+    50deg,
+    rgba(134, 130, 200, 1) 0%,
+    rgba(86, 152, 104, 1) 50%,
+    rgba(20, 154, 181, 1) 100%
+  );
 }
 
 .good {
@@ -32,7 +49,7 @@ main {
   border-radius: 10px;
   padding-left: 70px;
   align-items: center;
-  margin: 7px;
+  margin: 10px;
 }
 .good-text {
   width: 100%;
@@ -41,6 +58,7 @@ main {
   padding-left: 30px;
   width: 100%;
   font-size: 30px;
+  margin: 20px 0;
 }
 .good-name {
   flex-basis: 90%;
@@ -65,4 +83,9 @@ main {
   background-color: aqua;
   font-size: 80px;
   cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+
+.add-good:hover {
+  transform: scale(1.1);
 }
